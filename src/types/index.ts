@@ -60,3 +60,10 @@ export interface ESPPCalculationResult {
 export interface ValidationErrors {
   [key: string]: string;
 }
+
+// Global type augmentation for AdSense
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
+}
